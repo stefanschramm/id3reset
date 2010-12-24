@@ -1,0 +1,16 @@
+
+id3reset is supposed to (re)set the artist, album and track ID3 tags of mp3 files according to the directories they are located in and its filenames. 
+
+For example if there is a file
+  mp3s/Artist1/Album1/Track1.mp3
+and id3reset is called with
+  id3reset mp3s
+the file will get Artist1 as artist, Album1 as album and Track1.mp3 as track.
+
+id3reset relies on exactly this hierarchy (artist/album/track). It does not recurse into directories deeper as album and it doesn't modify files that are directly in the artist directory itself.
+
+I created this programm because my MP3-player is solely using the ID3 tags to navigate thru the files and completely ignores the directory structure, but I rather want to navigate thru the directories.
+
+Compiling
+id3reset depends on TagLib. There should be some package like libtagc0-dev for your distribution.
+
