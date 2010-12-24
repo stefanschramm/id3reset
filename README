@@ -1,5 +1,5 @@
 
-id3reset is supposed to (re)set the artist, album and track ID3 tags of mp3 files according to the directories they are located in and its filenames. 
+id3reset is supposed to (re)set the artist, album and track ID3 tags of MP3 files according to the directories they are located in and their filenames. 
 
 For example if there is a file
   mp3s/Artist1/Album1/Track1.mp3
